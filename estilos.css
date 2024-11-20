@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+.cabecera {
+    position: fixed;
+    top:0; /*posiciona un elemento exactamente en la parte superior de su contenedor padre.*/
+    left:0;
+    height: 10%;
+    width: 100%;
+    background-color: blue;
+    text-align: center; /*alinea el contenido del texto en el centro*/
+    'align-items: center;
+    'justify-content: center;
+    z-index: 1000; /*Define qué elemento se muestra por delante de otro cuando se superponen.*/
+}
+
+.cabecera img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.cabecera h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+.menu{
+  position: fixed; /*elemento del flujo normal del documento y lo posiciona en relación a su contenedor padre*/
+  top: 10%; /* Ajusta este valor según la altura de la cabecera */
+  left: 0;
+  width: 100%;
+  background-color: gray; /* Color de fondo del menú */
+  z-index: 999;
+}
+
+.menu ul{
+    display: inline-block; /*los muestra en linea  en lugar de arriba y abajo*/
+    list-style-type: none; /*elimina puntos de lista*/
+    float: right; /*elemento se desplace hacia la derecha de su contenedor*/
+}
+
+.menu a{
+    display: inline-block; /*muestra los elementos en linea*/
+    text-decoration: none; /*quita el subrayado a los enlaces*/
+}
+
+.cuerpo{
+    width: 100%;
+    margin-top: 145px;
+}
+
+.noticia{
+    background-color: black;
+    color: white;
+    border: 1px solid yellow;
+    overflow: hidden;/*Asegura que el contenedor .noticia abarque todos los elementos flotantes sin que sobresalgan.*/
+}
+
+.footer{
+    position: relative;
+    width:100%;
+    height:5%;
+    background-color: pink;
+    text-align: center;
+    }
+
+.noticia a{
+    text-decoration: none; /*quita el subrayado a los enlaces*/
+}
+.noticia p{
+    padding-top: 10px;
+}
+.noticia h2{
+    margin: 0;
+}
+
+
+.noticia img{
+    float: left;
+    margin-right: 10px; /* Añade un margen derecho para separar la imagen del texto */
+    max-width: 100px;
+
+
+
+}
